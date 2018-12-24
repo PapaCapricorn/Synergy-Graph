@@ -1,8 +1,7 @@
 $(document).ready(function($) {
 
   $("#go").click(function() {
-      var url = $('#jsonPath').val();
-
+    var url = $('#jsonPath').val();
     $.ajax({
       url: url,
       method: "GET",
@@ -11,6 +10,53 @@ $(document).ready(function($) {
       }
     });
   })
+
+  var graph = {
+    "nodes": [
+      {"id": "Bore", "value": 1, "color": "#cc0000"},
+      {"id": "Grenadin.Drone", "value": 1, "color": "#cc0000"},
+      {"id": "Permafrost", "value": 1, "color": "#0066ff"},
+      {"id": "Seek.Power", "value": 1, "color": "#000000"},
+      {"id": "Torch", "value": 1, "color": "#cc0000"},
+      {"id": "Combustion.Cell", "value": 1, "color": "#cc0000"},
+      {"id": "Spark.Hatcher", "value": 1, "color": "#cc0000"},
+      {"id": "Strategize", "value": 1, "color": "#0066ff"},
+      {"id": "Assembly.Line", "value": 1, "color": "#cc0000"},
+      {"id": "Ixtun.Merchant", "value": 1, "color": "#cc0000"},
+      {"id": "Wisdom.of.the.Elders", "value": 1, "color": "#0066ff"},
+      {"id": "End.of.Hostilities", "value": 1, "color": "#0066ff"},
+      {"id": "Howling.Peak", "value": 1, "color": "#ff9900"},
+      {"id": "Kenna,Shaman.of.the.Scale", "value": 1, "color": "#0066ff"},
+      {"id": "Xo.of.the.Endless.Hoard", "value": 1, "color": "#cc0000"},
+      {"id": "Granite.Waystone", "value": 1, "color": "#cc0000"},
+      {"id": "Kalebs.Choice", "value": 1, "color": "#ff9900"},
+      {"id": "Molot&Nakova", "value": 1, "color": "#ff9900"}
+    ],
+    "links": [
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Bore", "value": 1},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Seek.Power", "value": 1},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Torch", "value": 1},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Combustion.Cell", "value": 4},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Strategize", "value": 1},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Wisdom.of.the.Elders", "value": 1},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "End.of.Hostilities", "value": 5},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Howling.Peak", "value": 4},
+      {"source": "Kenna,Shaman.of.the.Scale", "target": "Kalebs.Choice", "value": 1},
+      {"source": "Combustion.Cell", "target": "Granite.Waystone", "value": 2},
+      {"source": "Combustion.Cell", "target": "Grenadin.Drone", "value": 2},
+      {"source": "Combustion.Cell", "target": "Spark.Hatcher", "value": 2},
+      {"source": "Combustion.Cell", "target": "Assembly.Line", "value": 2},
+      {"source": "Combustion.Cell", "target": "End.of.Hostilities", "value": 4},
+      {"source": "Ixtun.Merchant", "target": "Xo.of.the.Endless.Hoard", "value": 2},
+      {"source": "Strategize", "target": "Xo.of.the.Endless.Hoard", "value": 2},
+      {"source": "Ixtun.Merchant", "target": "Bore", "value": 2},
+      {"source": "Strategize", "target": "Bore", "value": 2},
+      {"source": "Ixtun.Merchant", "target": "Granite.Waystone", "value": 2},
+      {"source": "Strategize", "target": "Granite.Waystone", "value": 2},
+      {"source": "Howling.Peak", "target": "Molot&Nakova", "value": 2}
+    ]
+  }
+  makeGraph(graph);
 
 });
 
