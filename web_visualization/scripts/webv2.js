@@ -65,6 +65,8 @@ function makeGraph(graph) {
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
+  svg.selectAll('*').remove();
+
   var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) {
       return d.id;
