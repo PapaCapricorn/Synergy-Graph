@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {"id": "Auralian.Cargo", "value": 1, "color": "#ff9900"},
+    {"id": "Annihilate", "value": 1, "color": "#660066"},
+    {"id": "Rindras.Choice", "value": 1, "color": "#ff9900"},
+    {"id": "Strategize", "value": 1, "color": "#0066ff"},
+    {"id": "Temple.Scribe", "value": 1, "color": "#e6e600"},
+    {"id": "Amaran.Camel", "value": 1, "color": "#ff9900"},
+    {"id": "Auralian.Merchant", "value": 1, "color": "#e6e600"},
+    {"id": "Display.of.Knowledge", "value": 1, "color": "#ff9900"},
+    {"id": "Hailstorm", "value": 1, "color": "#0066ff"},
+    {"id": "Wisdom.of.the.Elders", "value": 1, "color": "#0066ff"},
+    {"id": "Clutch.of.Talons", "value": 1, "color": "#0066ff"},
+    {"id": "Crystalline.Chalice", "value": 1, "color": "#ff9900"},
+    {"id": "Feeding.Time", "value": 1, "color": "#ff9900"},
+    {"id": "Mask.of.Torment", "value": 1, "color": "#ff9900"},
+    {"id": "Brilliant.Idea", "value": 1, "color": "#0066ff"},
+    {"id": "Disjunction", "value": 1, "color": "#e6e600"},
+    {"id": "Varas.Choice", "value": 1, "color": "#ff9900"},
+    {"id": "Moondial", "value": 1, "color": "#e6e600"},
+    {"id": "Azindel,Revealed", "value": 1, "color": "#ff9900"}
+  ],
+  "links": [
+    {"source": "Mask.of.Torment", "target": "Temple.Scribe", "value": 1},
+    {"source": "Mask.of.Torment", "target": "Amaran.Camel", "value": 4},
+    {"source": "Mask.of.Torment", "target": "Clutch.of.Talons", "value": 3},
+    {"source": "Mask.of.Torment", "target": "Brilliant.Idea", "value": 4},
+    {"source": "Mask.of.Torment", "target": "Moondial", "value": 1},
+    {"source": "Mask.of.Torment", "target": "Crystalline.Chalice", "value": 1},
+    {"source": "Crystalline.Chalice", "target": "Temple.Scribe", "value": 1},
+    {"source": "Crystalline.Chalice", "target": "Auralian.Merchant", "value": 1},
+    {"source": "Crystalline.Chalice", "target": "Amaran.Camel", "value": 2},
+    {"source": "Auralian.Cargo", "target": "Amaran.Camel", "value": 1},
+    {"source": "Strategize", "target": "Amaran.Camel", "value": 1},
+    {"source": "Temple.Scribe", "target": "Amaran.Camel", "value": 1},
+    {"source": "Auralian.Merchant", "target": "Amaran.Camel", "value": 1},
+    {"source": "Display.of.Knowledge", "target": "Amaran.Camel", "value": 1},
+    {"source": "Wisdom.of.the.Elders", "target": "Amaran.Camel", "value": 1},
+    {"source": "Brilliant.Idea", "target": "Amaran.Camel", "value": 2},
+    {"source": "Moondial", "target": "Amaran.Camel", "value": 1}
+  ]
+}

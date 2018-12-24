@@ -1,5 +1,6 @@
 $(document).ready(function($) {
 
+/*
   $("#go").click(function() {
     var url = $('#jsonPath').val();
     $.ajax({
@@ -10,52 +11,52 @@ $(document).ready(function($) {
       }
     });
   })
+*/
 
   var graph = {
     "nodes": [
-      {"id": "Bore", "value": 1, "color": "#cc0000"},
-      {"id": "Grenadin.Drone", "value": 1, "color": "#cc0000"},
-      {"id": "Permafrost", "value": 1, "color": "#0066ff"},
-      {"id": "Seek.Power", "value": 1, "color": "#000000"},
-      {"id": "Torch", "value": 1, "color": "#cc0000"},
-      {"id": "Combustion.Cell", "value": 1, "color": "#cc0000"},
-      {"id": "Spark.Hatcher", "value": 1, "color": "#cc0000"},
+      {"id": "Auralian.Cargo", "value": 1, "color": "#ff9900"},
+      {"id": "Annihilate", "value": 1, "color": "#660066"},
+      {"id": "Rindras.Choice", "value": 1, "color": "#ff9900"},
       {"id": "Strategize", "value": 1, "color": "#0066ff"},
-      {"id": "Assembly.Line", "value": 1, "color": "#cc0000"},
-      {"id": "Ixtun.Merchant", "value": 1, "color": "#cc0000"},
+      {"id": "Temple.Scribe", "value": 1, "color": "#e6e600"},
+      {"id": "Amaran.Camel", "value": 1, "color": "#ff9900"},
+      {"id": "Auralian.Merchant", "value": 1, "color": "#e6e600"},
+      {"id": "Display.of.Knowledge", "value": 1, "color": "#ff9900"},
+      {"id": "Hailstorm", "value": 1, "color": "#0066ff"},
       {"id": "Wisdom.of.the.Elders", "value": 1, "color": "#0066ff"},
-      {"id": "End.of.Hostilities", "value": 1, "color": "#0066ff"},
-      {"id": "Howling.Peak", "value": 1, "color": "#ff9900"},
-      {"id": "Kenna,Shaman.of.the.Scale", "value": 1, "color": "#0066ff"},
-      {"id": "Xo.of.the.Endless.Hoard", "value": 1, "color": "#cc0000"},
-      {"id": "Granite.Waystone", "value": 1, "color": "#cc0000"},
-      {"id": "Kalebs.Choice", "value": 1, "color": "#ff9900"},
-      {"id": "Molot&Nakova", "value": 1, "color": "#ff9900"}
+      {"id": "Clutch.of.Talons", "value": 1, "color": "#0066ff"},
+      {"id": "Crystalline.Chalice", "value": 1, "color": "#ff9900"},
+      {"id": "Feeding.Time", "value": 1, "color": "#ff9900"},
+      {"id": "Mask.of.Torment", "value": 1, "color": "#ff9900"},
+      {"id": "Brilliant.Idea", "value": 1, "color": "#0066ff"},
+      {"id": "Disjunction", "value": 1, "color": "#e6e600"},
+      {"id": "Varas.Choice", "value": 1, "color": "#ff9900"},
+      {"id": "Moondial", "value": 1, "color": "#e6e600"},
+      {"id": "Azindel,Revealed", "value": 1, "color": "#ff9900"}
     ],
     "links": [
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Bore", "value": 1},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Seek.Power", "value": 1},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Torch", "value": 1},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Combustion.Cell", "value": 4},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Strategize", "value": 1},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Wisdom.of.the.Elders", "value": 1},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "End.of.Hostilities", "value": 5},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Howling.Peak", "value": 4},
-      {"source": "Kenna,Shaman.of.the.Scale", "target": "Kalebs.Choice", "value": 1},
-      {"source": "Combustion.Cell", "target": "Granite.Waystone", "value": 2},
-      {"source": "Combustion.Cell", "target": "Grenadin.Drone", "value": 2},
-      {"source": "Combustion.Cell", "target": "Spark.Hatcher", "value": 2},
-      {"source": "Combustion.Cell", "target": "Assembly.Line", "value": 2},
-      {"source": "Combustion.Cell", "target": "End.of.Hostilities", "value": 4},
-      {"source": "Ixtun.Merchant", "target": "Xo.of.the.Endless.Hoard", "value": 2},
-      {"source": "Strategize", "target": "Xo.of.the.Endless.Hoard", "value": 2},
-      {"source": "Ixtun.Merchant", "target": "Bore", "value": 2},
-      {"source": "Strategize", "target": "Bore", "value": 2},
-      {"source": "Ixtun.Merchant", "target": "Granite.Waystone", "value": 2},
-      {"source": "Strategize", "target": "Granite.Waystone", "value": 2},
-      {"source": "Howling.Peak", "target": "Molot&Nakova", "value": 2}
+      {"source": "Mask.of.Torment", "target": "Temple.Scribe", "value": 1},
+      {"source": "Mask.of.Torment", "target": "Amaran.Camel", "value": 4},
+      {"source": "Mask.of.Torment", "target": "Clutch.of.Talons", "value": 3},
+      {"source": "Mask.of.Torment", "target": "Brilliant.Idea", "value": 4},
+      {"source": "Mask.of.Torment", "target": "Moondial", "value": 1},
+      {"source": "Mask.of.Torment", "target": "Crystalline.Chalice", "value": 1},
+      {"source": "Crystalline.Chalice", "target": "Temple.Scribe", "value": 1},
+      {"source": "Crystalline.Chalice", "target": "Auralian.Merchant", "value": 1},
+      {"source": "Crystalline.Chalice", "target": "Amaran.Camel", "value": 2},
+      {"source": "Auralian.Cargo", "target": "Amaran.Camel", "value": 1},
+      {"source": "Strategize", "target": "Amaran.Camel", "value": 1},
+      {"source": "Temple.Scribe", "target": "Amaran.Camel", "value": 1},
+      {"source": "Auralian.Merchant", "target": "Amaran.Camel", "value": 1},
+      {"source": "Display.of.Knowledge", "target": "Amaran.Camel", "value": 1},
+      {"source": "Wisdom.of.the.Elders", "target": "Amaran.Camel", "value": 1},
+      {"source": "Brilliant.Idea", "target": "Amaran.Camel", "value": 2},
+      {"source": "Moondial", "target": "Amaran.Camel", "value": 1}
     ]
   }
+
+
   makeGraph(graph);
 
 });
@@ -87,6 +88,8 @@ function makeGraph(graph) {
     .attr("class", "nodes")
     .selectAll("g")
     .data(graph.nodes)
+    .attr('cx', Math.random()*width)
+    .attr('cy', Math.random()*height)
     .enter().append("g");
 
   for (j = 0; j < graph.links.length; j++) {

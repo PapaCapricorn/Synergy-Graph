@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {"id": "Dark.Return", "value": 1, "color": "#660066"},
+    {"id": "Torch", "value": 1, "color": "#cc0000"},
+    {"id": "Winchest.Cargo", "value": 1, "color": "#ff9900"},
+    {"id": "Annihilate", "value": 1, "color": "#660066"},
+    {"id": "Cull.the.Deck", "value": 1, "color": "#660066"},
+    {"id": "Paladin.Oathbook", "value": 1, "color": "#33cc33"},
+    {"id": "Piercing.Grief", "value": 1, "color": "#660066"},
+    {"id": "Quarry", "value": 1, "color": "#ff9900"},
+    {"id": "Display.of.Ambition", "value": 1, "color": "#ff9900"},
+    {"id": "Hidden.Road.Smuggler", "value": 1, "color": "#ff9900"},
+    {"id": "Stonepowder.Alchemist", "value": 1, "color": "#ff9900"},
+    {"id": "Whirling.Duo", "value": 1, "color": "#ff9900"},
+    {"id": "Rise.to.the.Challenge", "value": 1, "color": "#ff9900"},
+    {"id": "Harsh.Rule", "value": 1, "color": "#33cc33"},
+    {"id": "Vanquish", "value": 1, "color": "#33cc33"},
+    {"id": "Avigraft", "value": 1, "color": "#33cc33"},
+    {"id": "Burglarize", "value": 1, "color": "#660066"},
+    {"id": "Vicious.Highwayman", "value": 1, "color": "#ff9900"},
+    {"id": "End.of.the.Story", "value": 1, "color": "#33cc33"}
+
+  ],
+  "links": [
+    {"source": "Dark.Return", "target": "Piercing.Grief", "value": 3},
+    {"source": "Dark.Return", "target": "Stonepowder.Alchemist", "value": 3},
+    {"source": "Cull.the.Deck", "target": "Piercing.Grief", "value": 2},
+    {"source": "Cull.the.Deck", "target": "Stonepowder.Alchemist", "value": 2},
+    {"source": "Quarry", "target": "Piercing.Grief", "value": 2},
+    {"source": "Quarry", "target": "Stonepowder.Alchemist", "value": 2},
+    {"source": "Display.of.Ambition", "target": "Piercing.Grief", "value": 4},
+    {"source": "Display.of.Ambition", "target": "Stonepowder.Alchemist", "value": 4},
+    {"source": "Paladin.Oathbook", "target": "Piercing.Grief", "value": 3},
+    {"source": "Paladin.Oathbook", "target": "Stonepowder.Alchemist", "value": 2},
+    {"source": "Paladin.Oathbook", "target": "Whirling.Duo", "value": 1},
+    {"source": "Paladin.Oathbook", "target": "Dark.Return", "value": 1},
+    {"source": "Rise.to.the.Challenge", "target": "Piercing.Grief", "value": 2},
+    {"source": "Rise.to.the.Challenge", "target": "Stonepowder.Alchemist", "value": 2},
+    {"source": "Burglarize", "target": "Piercing.Grief", "value": 1},
+    {"source": "Burglarize", "target": "Stonepowder.Alchemist", "value": 1}
+  ]
+}
