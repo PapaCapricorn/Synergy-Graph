@@ -10,7 +10,7 @@ $(document).ready(function($) {
         makeGraph(json);
       }
     });
-  }
+  })
 
   function ticked() {
     link.attr("x1", function(d) {
